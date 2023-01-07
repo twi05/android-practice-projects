@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doro Pizza's"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:textSize="30sp"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/colorAccent">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image_home"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_toRightOf="@id/heading"
+            android:layout_marginTop="-2sp"
+            android:src="@mipmap/pizza_home_foreground">
+        </ImageView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150sp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO ITEMS IN "
+                    android:id="@+id/content"
+                    android:textColor="@color/cardview_light_background"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_below="@id/image_home"
+                    android:padding="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="20sp">
+                </TextView>
+
+
+                <LinearLayout
+                    android:id="@+id/cartItemsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Time when you will reach:"
+                    android:layout_above="@id/totalamount"
+                    android:padding="10sp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/starttimetext"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="5sp">
+                </TextView>
+                <TimePicker
+                    android:id="@+id/starttimepicker"
+                    android:layout_width="250sp"
+                    android:layout_height="150sp"
+                    android:timePickerMode="spinner"
+                    android:layout_toRightOf="@id/starttimetext"
+                    android:layout_above="@id/totalamount"
+                    android:layout_centerHorizontal="true"/>
+
+
+                <TextView
+                    android:id="@+id/totalamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/inputUPI"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:padding="10sp"
+                    android:text="Total Amount to pay:      "
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/amounttopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/inputUPI"
+                    android:layout_toRightOf="@id/totalamount"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="0"
+                    android:padding="10sp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20sp">
+                </TextView>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputUPI"
+                    android:inputType="number"
+                    android:hint="Enter UPI here"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/orderbtn">
+
+                </EditText>
+
+
+                <Button
+                    android:id="@+id/orderbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Order"
+                    android:background="@color/black"
+                    android:padding="10sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    ></Button>
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".cart_items">-->
+
+<!--<LinearLayout-->
+<!--    android:id="@+id/cartItemsContainer"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:gravity="center_horizontal"-->
+<!--    android:orientation="vertical">-->
+
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome"
+        android:text="Welcome "
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="80sp"
+        android:fontFamily="sans-serif"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <Button
+        android:id="@+id/downloadbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="download"
+        android:text="CLick to download Voluntary Blood Donation Programme Details"></Button>
+
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Logout"
+    android:layout_alignParentRight="true"
+    android:id="@+id/deletebtn"
+    android:onClick="delete"
+    ></Button>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Book Slot"
+  android:layout_below="@id/downloadbtn"
+    android:id="@+id/bookslot"
+        android:layout_centerInParent="true"
+    android:onClick="bookslot"
+
+    ></Button>
+
+</RelativeLayout>

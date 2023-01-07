@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsLetter App</string>
+    <string-array name="freq_array">
+        <item>Daily </item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Qualterly</item>
+
+    </string-array>
+</resources>

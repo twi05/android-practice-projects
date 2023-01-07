@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="20sp"
+        android:text="Customize"
+        android:textSize="34sp"
+        android:fontFamily="sans-serif"
+        />
+    <TextView
+        android:id="@+id/dishdetail"
+        android:layout_below="@id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_marginLeft="100sp"
+        android:text="Customize"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/dishname"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="60sp"-->
+<!--        android:layout_below="@id/heading"-->
+<!--        android:layout_marginLeft="100sp"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:text="Customize"-->
+<!--        android:textSize="25sp" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="150sp"
+        android:orientation="vertical">
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capsicum"
+            android:id="@+id/capcicum"></CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra Cheese"
+            android:id="@+id/extracheese" ></CheckBox>
+
+<!--        <CheckBox-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="tomato sauce"></CheckBox>-->
+
+<!--        <CheckBox-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=" oregano"></CheckBox>-->
+
+<!--        <CheckBox-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="  red pepper flakes"></CheckBox>-->
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Back to Pizza Page"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50sp"
+        android:id="@+id/backtopizzapage"
+        ></Button>
+</RelativeLayout>

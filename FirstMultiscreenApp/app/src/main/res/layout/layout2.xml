@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/head"
+        android:text="The data from the Newsletter Form."
+        android:layout_alignParentTop="true"
+android:layout_centerInParent="true"
+        android:textSize="22sp"
+        android:layout_marginBottom="5sp"
+        android:textColor="@color/teal_200"
+
+        />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+android:layout_below="@id/head"
+      android:text="DATA FROM FORM!"
+      android:id="@+id/data"
+      android:layout_centerInParent="true"
+      android:textSize="20sp"
+      android:layout_marginRight="10sp"
+      android:layout_marginLeft="10sp"
+      android:layout_marginBottom="10sp"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data"
+        android:text="Thankyou for subscribing to the Newsletter😎"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/thankyoutext"
+        />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/thankyoutext"
+      android:text="RatingData :"
+      android:id="@+id/ratingtext"
+
+      android:textSize="15sp"
+      android:layout_marginTop="10sp"
+      android:layout_marginRight="10sp"
+      android:layout_marginLeft="80sp"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/thankyoutext"
+      android:text="RatingData"
+      android:id="@+id/ratingdata"
+      android:layout_centerInParent="true"
+      android:textSize="15sp"
+      android:layout_marginTop="10sp"
+      android:layout_marginRight="10sp"
+      android:layout_marginLeft="10sp"
+      android:layout_toRightOf="@id/ratingtext"
+      />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpline"
+        android:layout_above="@id/feedback"
+        android:text="CALL OUT HELPLINE"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:onClick="openCall"
+        />
+
+  <Button
+      android:id="@+id/feedback"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/location"
+      android:layout_marginLeft="10sp"
+      android:layout_marginRight="10sp"
+      android:onClick="forfeedback"
+      android:text="SUBMIT FEEDBACK" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:layout_above="@id/query"
+        android:text="REACH OUR LOCATION"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:onClick="openMap"
+        />
+
+  <Button
+      android:id="@+id/query"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/playstore"
+      android:layout_marginLeft="10sp"
+      android:layout_marginRight="10sp"
+      android:onClick="openMail"
+      android:text="FOR ANY QUERY WRITE TO US"
+
+      />
+
+  <Button
+      android:id="@+id/playstore"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="10sp"
+      android:layout_marginRight="10sp"
+      android:layout_marginBottom="30sp"
+      android:onClick="openGplay"
+      android:text="DOWNLOAD OUT APP FORM PLAYSTORE" />
+
+</RelativeLayout>

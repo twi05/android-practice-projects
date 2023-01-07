@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:title="cart"
+        android:id="@+id/carticonnav"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/cart_image"
+        android:tint="@android:color/white"
+
+        />
+    <item android:title="Pizza"
+        android:id="@+id/pizza"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item android:title="Pasta"
+        android:id="@+id/pasta"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+</menu>
